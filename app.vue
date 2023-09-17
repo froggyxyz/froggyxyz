@@ -5,8 +5,6 @@
         <div class="top">
             <Frog />
             <h1><span>froggy</span>.xyz</h1>
-            <button @click="setModal(ModalTest)">Open modal</button>
-            <button @click="closeModal">Close modal</button>
         </div>
         <NuxtPage />
     </div>
@@ -14,9 +12,6 @@
 
 <script setup lang="ts">
 import Frog from 'assets/icons/Frog.vue';
-import ModalTest from '~/components/modal/Test.vue';
-
-const [setModal, closeModal] = useFrogModal();
 </script>
 
 <style lang="scss" scoped>
