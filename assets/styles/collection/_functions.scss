@@ -1,0 +1,12 @@
+@function pxToRem($font-size) {
+  $remValue: calc($font-size / 16) + rem;
+  @return $remValue;
+}
+
+@function hexToRGB($hex) {
+  @return red($hex), green($hex), blue($hex);
+}
+
+@function hexa($hex, $opacity) {
+  @return rgba(red($hex), green($hex), blue($hex), $opacity);
+}
