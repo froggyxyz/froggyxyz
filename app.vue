@@ -18,7 +18,7 @@ useHead({
 </script>
 
 <template>
-    <div style="height: 100vh">
+    <div style="width: 100vw">
         <FrogModal />
         <div class="page">
             <WidgetHeader />
@@ -39,11 +39,11 @@ useHead({
 
 <style lang="scss" scoped>
 .page {
-    height: 100vh;
+    overflow-x: hidden;
 
     main {
-        padding: 200px 64px 200px;
-        height: 100%;
+        width: 100vw;
+        padding: 50px 64px 50px;
         display: flex;
         flex-direction: column;
         align-items: center;
