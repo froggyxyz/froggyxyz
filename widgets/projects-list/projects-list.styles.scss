@@ -1,0 +1,13 @@
+.projects-list {
+    margin-top: 256px;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 60px;
+
+    @include mobile {
+        margin-top: 128px;
+        gap: 10px 30px;
+    }
+}

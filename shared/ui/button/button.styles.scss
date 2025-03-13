@@ -1,0 +1,41 @@
+.button {
+    padding: 12px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    transition: color .4s;
+
+    @include mobile {
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+    }
+
+    &__highlighter {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        background-color: #fff;
+        z-index: 0;
+
+        transition: width .4s;
+    }
+
+    &:hover {
+        color: #000;
+
+        .button__highlighter {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.locale-switcher {
+    display: flex;
+    align-items: center;
+
+    border: 3px solid #fff;
+
+    &__highlighter {
+        display: block;
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 50%;
+        background-color: #fff;
+
+        transition: all .4s;
+    }
+
+    &.ru {
+        .locale-switcher__highlighter {
+            left: 0;
+        }
+    }
+
+    &.en {
+        .locale-switcher__highlighter {
+            left: 50%;
+        }
+    }
+
+    button {
+        padding: 5px 10px;
+        font-size: 24px;
+        background: none;
+        color: #fff;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+
+        transition: color .4s;
+
+        &.active {
+            color: #000;
+        }
+
+        @include mobile {
+            font-size: 16px;
+        }
+    }
+}

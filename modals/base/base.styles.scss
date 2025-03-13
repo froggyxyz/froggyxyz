@@ -1,0 +1,27 @@
+.base-modal {
+    padding: 64px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #000;
+    border: 3px solid #fff;
+    overflow: scroll;
+
+    &__close {
+        position: fixed;
+        top: 64px;
+        right: 64px;
+        cursor: pointer;
+        background: none;
+
+        @include mobile {
+            top: 16px;
+            right: 16px;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
