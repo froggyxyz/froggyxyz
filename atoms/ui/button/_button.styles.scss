@@ -9,7 +9,7 @@
     position: relative;
     transition: color .4s;
 
-    @include mobile {
+    @include medias.mobile {
         padding: 6px 10px;
         font-size: 16px;
     }

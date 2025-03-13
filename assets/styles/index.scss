@@ -1,6 +1,6 @@
-@import "global/reset";
+@use "global/reset" as *;
 
-@import "collection/colors";
-@import "collection/fonts";
+@use "collection/colors" as *;
+@use "collection/fonts" as *;
 
-@import "global/base";
+@use "global/base" as *;

@@ -54,7 +54,7 @@ useHead({
             font-size: 128px;
             margin-bottom: 64px;
 
-            @include mobile {
+            @include medias.mobile {
                 font-size: 64px;
 
                 margin-bottom: 32px;
@@ -66,7 +66,7 @@ useHead({
             font-size: 64px;
             margin-bottom: 48px;
 
-            @include mobile {
+            @include medias.mobile {
                 font-size: 32px;
 
                 margin-bottom: 24px;
@@ -78,7 +78,7 @@ useHead({
             font-size: 48px;
             font-weight: 700;
 
-            @include mobile {
+            @include medias.mobile {
                 font-size: 24px;
             }
         }

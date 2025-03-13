@@ -15,4 +15,4 @@ const [open] = useFrogModal();
     </div>
 </template>
 
-<style lang="scss" scoped src="./project-element.styles.scss"></style>
+<style lang="scss" scoped src="./_project-element.styles.scss"></style>

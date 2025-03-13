@@ -24,4 +24,4 @@ const { locale } = useI18n();
     </footer>
 </template>
 
-<style lang="scss" scoped src="./footer.styles.scss"></style>
+<style lang="scss" scoped src="./_footer.styles.scss"></style>

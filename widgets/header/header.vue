@@ -7,4 +7,4 @@
     </header>
 </template>
 
-<style lang="scss" scoped src="./header.styles.scss"></style>
+<style lang="scss" scoped src="./_header.styles.scss"></style>

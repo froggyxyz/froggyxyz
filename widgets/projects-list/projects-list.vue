@@ -109,4 +109,4 @@
     </div>
 </template>
 
-<style lang="scss" scoped src="./projects-list.styles.scss"></style>
+<style lang="scss" scoped src="./_projects-list.styles.scss"></style>

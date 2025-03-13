@@ -10,4 +10,4 @@ const { locale, setLocale } = useI18n();
     </div>
 </template>
 
-<style lang="scss" scoped src="./locale-switcher.styles.scss"></style>
+<style lang="scss" scoped src="./_locale-switcher.styles.scss"></style>

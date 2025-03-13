@@ -15,4 +15,4 @@ const getElementType = () => (props.href ? 'a' : 'button');
     </component>
 </template>
 
-<style lang="scss" scoped src="./button.styles.scss"></style>
+<style lang="scss" scoped src="./_button.styles.scss"></style>

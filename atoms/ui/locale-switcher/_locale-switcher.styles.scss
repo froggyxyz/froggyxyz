@@ -42,7 +42,7 @@
             color: #000;
         }
 
-        @include mobile {
+        @include medias.mobile {
             font-size: 16px;
         }
     }

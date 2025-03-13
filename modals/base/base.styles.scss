@@ -14,7 +14,7 @@
         cursor: pointer;
         background: none;
 
-        @include mobile {
+        @include medias.mobile {
             top: 16px;
             right: 16px;
 

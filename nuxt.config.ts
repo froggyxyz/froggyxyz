@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: '2024-11-01',
-    devtools: { enabled: true },
     modules: [
         '@nuxtjs/eslint-module',
         '@pinia/nuxt',
@@ -12,8 +11,8 @@ export default defineNuxtConfig({
         '@nuxtjs/google-fonts',
     ],
     components: [
-        { path: '~/shared/ui', prefix: 'Ui', extensions: ['.vue'] },
-        { path: '~/shared/icons', prefix: 'Icon' },
+        { path: '~/atoms/ui', prefix: 'Ui', extensions: ['.vue'] },
+        { path: '~/atoms/icons', prefix: 'Icon' },
         { path: '~/features', prefix: 'Feature', extensions: ['.ts'] },
         { path: '~/widgets', prefix: 'Widget', extensions: ['.vue'] },
         { path: '~/modals', prefix: 'Modal', extensions: ['.vue'] },
@@ -23,12 +22,7 @@ export default defineNuxtConfig({
             { code: 'en', language: 'en-US' },
             { code: 'ru', language: 'ru-RU' },
         ],
-        defaultLocale: 'ru',
-        detectBrowserLanguage: {
-            useCookie: true,
-            cookieKey: 'i18n_locale',
-            redirectOn: 'root',
-        },
+        defaultLocale: 'en',
     },
     googleFonts: {
         download: true,
@@ -40,9 +34,7 @@ export default defineNuxtConfig({
         css: {
             preprocessorOptions: {
                 scss: {
-                    quietDeps: true,
-                    api: 'modern',
-                    additionalData: '@import "@/assets/styles/collection/index.scss";',
+                    additionalData: '@use "@/assets/styles/collection/_medias.scss" as medias;',
                 },
             },
         },
